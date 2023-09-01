@@ -58,6 +58,7 @@ jobs:
             velocity/build/libs/LuckPerms-Velocity-*.jar
             fabric/build/libs/LuckPerms-Fabric-*.jar
             forge/loader/build/libs/LuckPerms-Forge-*.jar
+            minestom/loader/build/libs/LuckPerms-Minestom-*.jar
             standalone/loader/build/libs/LuckPerms-Standalone-*.jar
 
       - name: Upload standalone artifact
