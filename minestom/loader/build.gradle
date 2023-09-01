@@ -7,10 +7,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.Minestom:Minestom:-SNAPSHOT'
-
     implementation project(':api')
     implementation project(':common:loader-utils')
+
+    compileOnly 'dev.hollowcube:minestom-ce:e9d0098418'
+    compileOnly 'dev.hollowcube:minestom-ce-extensions:1.2.0'
 }
 
 java {
