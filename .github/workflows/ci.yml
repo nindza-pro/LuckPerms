@@ -3,12 +3,12 @@ name: Build Gradle and Publish Docker image
 on:
   push:
     branches:
-      - 'master'
+      - 'minestom-support'
     tags:
       - 'v*'
   pull_request:
     branches:
-      - 'master'
+      - 'minestom-support'
 
 env:
   REGISTRY: ghcr.io
