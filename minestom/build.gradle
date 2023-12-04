@@ -15,7 +15,7 @@ dependencies {
     implementation project(':common')
     compileOnly project(':common:loader-utils')
 
-    compileOnly 'dev.hollowcube:minestom-ce:e9d0098418'
+    compileOnly 'dev.hollowcube:minestom-ce-snapshots:1_20_2-e7f833b499'
     compileOnly 'dev.hollowcube:minestom-ce-extensions:1.2.0'
 }
 

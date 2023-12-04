@@ -181,20 +181,20 @@ public class LPMinestomBootstrap implements LuckPermsBootstrap, LoaderBootstrap,
 
     @Override
     public int getPlayerCount() {
-        return MinecraftServer.getConnectionManager().getOnlinePlayers().size();
+        return MinecraftServer.getConnectionManager().getOnlinePlayerCount();
     }
 
     @Override
     public Collection<String> getPlayerList() {
         ArrayList<String> playerNames = new ArrayList<>();
-        MinecraftServer.getConnectionManager().getOnlinePlayers().forEach(player -> playerNames.add(player.getUsername()));
+        MinecraftServer.getConnectionManager().getPlayers().forEach(player -> playerNames.add(player.getUsername()));
         return playerNames;
     }
 
     @Override
     public Collection<UUID> getOnlinePlayers() {
         ArrayList<UUID> playerIds = new ArrayList<>();
-        MinecraftServer.getConnectionManager().getOnlinePlayers().forEach(player -> playerIds.add(player.getUuid()));
+        MinecraftServer.getConnectionManager().getPlayers().forEach(player -> playerIds.add(player.getUuid()));
         return playerIds;
     }
 

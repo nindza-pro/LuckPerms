@@ -213,7 +213,7 @@ public class LPMinestomPlugin extends AbstractLuckPermsPlugin {
 
     @Override
     public Stream<Sender> getOnlineSenders() {
-        return MinecraftServer.getConnectionManager().getOnlinePlayers().stream().map(p -> getSenderFactory().wrap(p));
+        return MinecraftServer.getConnectionManager().getPlayers().stream().map(p -> getSenderFactory().wrap(p));
     }
 
     @Override
