@@ -65,10 +65,9 @@ public class MinestomSenderFactory extends SenderFactory<LPMinestomPlugin, Comma
     @Override
     protected void sendMessage(CommandSender sender, Component message) {
         Locale locale = null;
-        if (sender instanceof Player player) {
-            if (player.getSettings().getLocale() != null) {
+        if (sender instanceof Player player && (player.getSettings().getLocale() != null)) {
                 locale = Locale.forLanguageTag(player.getSettings().getLocale());
-            }
+
         }
         Component rendered = TranslationManager.render(message, locale);
         sender.sendMessage(rendered);
